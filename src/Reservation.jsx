@@ -17,7 +17,7 @@ export default function PageConnection(){
       </div>
       <div className="bg-white p-4 text-blue-500 py-8">
         
-        <div className='mb-4 py-4'>
+        <div className='mb-4 py-80'>
           <button onClick={handleReservation} className="bg-blue-500 text-white px-8 py-4 rounded font-bold mr-4">
             Réserver une place
           </button>

@@ -37,9 +37,9 @@ export default function PageConnection(){
       <div className="bg-blue-500 p-6">
         <h1 className="text-white">Parking</h1>
       </div>
-      <div className="bg-white p-4 text-blue-500 py-8">
+      <div className="bg-white p-7 text-blue-500 ">
         <h1>saisie le code  pin :</h1>
-        <div className='mb-4 py-4'>
+        <div className='mb- py-80'>
           <input
             type="text"
             maxLength="1"

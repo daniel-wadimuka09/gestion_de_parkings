@@ -23,12 +23,12 @@ export default function PageConnection(){
 
   return (
     <div className="text-center ">
-      <div className="bg-blue-500 p-6">
+      <div className="bg-blue-500 p-9">
         <h1 className="text-white">Parking</h1>
       </div>
       <div className="bg-white p-4 text-blue-500 py-8">
         <h1>Page de Connexion</h1>
-        <div className='mb-10 py-4 '>
+        <div className='mb-10 py-8 '>
           <input
             type="email"
             placeholder="Adresse Email"
