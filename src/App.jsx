@@ -7,6 +7,7 @@ import PageConnection from './PageConnection'
 import Inscription from './Inscription'
 import Codepin from './Codepin'
 import Reservation from './Reservation'
+import Home from './Home'
 
 
 function App() {
@@ -30,6 +31,9 @@ function App() {
       </div>
       <div>
         <Reservation />
+      </div>
+      <div>
+        <Home />
       </div>
       
     </>
