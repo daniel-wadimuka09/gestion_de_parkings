@@ -6,8 +6,10 @@ import Footer from './Footer'
 import PageConnection from './PageConnection'
 import Inscription from './Inscription'
 import Codepin from './Codepin'
-import Reservation from './Reservation'
 import Home from './Home'
+import Reservation from './Reservation'
+import ReactDOM from 'react-dom'
+
 
 
 function App() {

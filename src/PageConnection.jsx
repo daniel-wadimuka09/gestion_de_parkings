@@ -1,10 +1,12 @@
 import React, { useState } from 'react';
 
-export default function PageConnection(){
+export default function PageConnection() {
 
+  // State for email and password
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
 
+  // Handlers for email and password changes
   const handleEmailChange = (e) => {
     setEmail(e.target.value);
   };
@@ -13,6 +15,7 @@ export default function PageConnection(){
     setPassword(e.target.value);
   };
 
+  // Handlers for login and forgot password
   const handleLogin = () => {
     // Logic for handling login
   };
@@ -22,12 +25,13 @@ export default function PageConnection(){
   };
 
   return (
-    <div className="text-center ">
-      <div className="bg-blue-500 p-9">
+    <div className="text-center  ">
+      <div className="bg-blue-500 p-6">
         <h1 className="text-white">Parking</h1>
       </div>
       <div className="bg-white p-4 text-blue-500 py-8">
         <h1>Page de Connexion</h1>
+        {/* Input for email */}
         <div className='mb-10 py-8 '>
           <input
             type="email"
@@ -37,6 +41,7 @@ export default function PageConnection(){
             className="bg-blue-500 text-blue-500 px-4 py-4 rounded"
           />
         </div>
+        {/* Input for password */}
         <div className='mb-10 px-5'>
           <input
             type="password"
@@ -46,31 +51,37 @@ export default function PageConnection(){
             className="bg-blue-500 text-blue-500 px-4 py-4 rounded"
           />
         </div>
-        <div className=' py-6'>
+        {/* Forgot password link */}
+        <div className=' py-11'>
           <a href="#" onClick={handleForgotPassword} className="text-blue-500">
             Mot de passe oublié
           </a>
         </div>
+        {/* Login button */}
         <div className='mb-10 px-'>
           <button onClick={handleLogin} className="bg-blue-500 text-white px-4 py-2 rounded">
             Se connecter
           </button>
         </div>
         
+        {/* Facebook and Google logos */}
         <div className="my-4 flex justify-center ">
-          <a href="lien_vers_google" className="mr-5">
-            <img src="/home/user-31-c1/gestion_de_parking/src/logo/facebook (2).png" alt="Google" width="50" height="50" />
+          {/* Facebook logo */}
+          <a href="lien_vers_facebook" className="mr-5">
+            <img src="https://github.com/daniel-wadimuka09/gestion_de_parkings/blob/9cbcc6cdda8e9ee3ab57837ec3a799f7b9368016/src/logo/facebook%20(2).png" alt="Facebook" width="50" height="50" className="facebook-logo" />
           </a>
-          <a href="lien_vers_facebook">
-            <img src="/home/user-31-c1/gestion_de_parking/src/photos/images (1).png" alt="Facebook" width="50" height="50" />
+          {/* Google logo */}
+          <a href="lien_vers_google">
+            <img src="/home/user-31-c1/gestion_de_parking/src/logo/google.png" alt="Google" width="50" height="50" className="google-logo" />
           </a>
         </div>
       </div>
+      {/* Sign up link */}
       <div className='flex justify-center items-center mt-5'>
-          <a href="lien_vers_inscription" className="text-blue-500">
-            S inscrire 
-          </a>
-        </div>
+        <a href="lien_vers_inscription" className="text-blue-500">
+          S'inscrire 
+        </a>
+      </div>
       <div className="bg-blue-500 p-6">
         <h1 className="text-white"></h1>
       </div>

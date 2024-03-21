@@ -12,13 +12,13 @@ export default function PageConnection(){
 
   return (
     <div className="text-center">
-      <div className="bg-blue-500 p-6">
+      <div className="bg-blue-500 p-5">
         <h1 className="text-white">Parking</h1>
       </div>
-      <div className="bg-white p-4 text-blue-500 py-8">
+      <div className="bg-white p-4 text-blue-500 py-4 flex flex-col items-center">
         
-        <div className='mb-4 py-80'>
-          <button onClick={handleReservation} className="bg-blue-500 text-white px-8 py-4 rounded font-bold mr-4">
+        <div className='mb-4 py-60'>
+          <button onClick={handleReservation} className="bg-blue-500 text-white px-8 py-4 rounded font-bold mb-5">
             Réserver une place
           </button>
           <button onClick={handleSubscription} className="bg-orange-500 text-white px-8 py-4 rounded font-bold">

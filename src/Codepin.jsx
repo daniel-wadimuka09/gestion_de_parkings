@@ -39,7 +39,7 @@ export default function PageConnection(){
       </div>
       <div className="bg-white p-7 text-blue-500 ">
         <h1>saisie le code  pin :</h1>
-        <div className='mb- py-80'>
+        <div className='mb- py-48'>
           <input
             type="text"
             maxLength="1"
@@ -73,7 +73,7 @@ export default function PageConnection(){
             className="bg-blue-500 text-blue-500 px-4 py-2 rounded w-10 inline-block"
           />
         </div>
-        <div className='mb-4 py-4'>
+        <div className='mb-4 py-11'>
           <button onClick={handleRegistration} className="bg-orange-500 text-white px-4 py-2 rounded">
             Confimer le code
           </button>

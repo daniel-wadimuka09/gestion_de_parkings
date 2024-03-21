@@ -16,24 +16,33 @@ export default function PageConnection() {
 
   return (
     <div className="text-center">
-      <div className="bg-blue-500 p-9">
+      <div className="bg-blue-500 p-5">
         <h1 className="text-white">Parking</h1>
       </div>
       <div className="bg-white p-4 text-blue-500 py-8">
-        <img src="/path/to/your/image.jpg" alt="Parking" width="200" height="200" />
-        <h1>Bienvenue dans nos parkings</h1>
-        <p>Réservez votre place ou souscrivez un abonnement dans le parking qui vous convient.</p>
+        <img src="/path/to/your/image.jpg" alt="Parking" width="200" height="200" className="mx-auto" />
+        <h1 className="mb-4">Bienvenue dans nos parkings</h1>
+        <p className="mb-4">Réservez votre place ou souscrivez un abonnement dans le parking qui vous convient.</p>
         <div className="my-4">
-          <button className="bg-orange-500 text-white px-4 py-2 rounded" onClick={handleParkingKasumbalesa}>Parking Kasumbalesa</button>
-          <button className="bg-orange-500 text-white px-4 py-2 rounded" onClick={handleParkingLubumbashi}>Parking Lubumbashi</button>
+          <div className="flex items-center justify-center mb-4">
+            <img src="/path/to/your/image_kasumbalesa.jpg" alt="Parking Kasumbalesa" width="50" height="50" className="mr-2" />
+            <button className="bg-orange-500 text-white px-4 py-2 rounded" onClick={handleParkingKasumbalesa}>Parking Kasumbalesa</button>
+          </div>
+          <div className="flex items-center justify-center">
+            <img src="/path/to/your/image_lubumbashi.jpg" alt="Parking Lubumbashi" width="50" height="50" className="mr-2" />
+            <button className="bg-orange-500 text-white px-4 py-2 rounded" onClick={handleParkingLubumbashi}>Parking Lubumbashi</button>
+          </div>
         </div>
-        <button className="bg-orange-500 text-white px-4 py-2 rounded" onClick={handleDiscoverServices}>Découvrir nos services</button>
-        
+        <div className="my-4">
+          <button className="bg-orange-500 text-white px-4 py-2 rounded" onClick={handleDiscoverServices}>Découvrir nos services</button>
+        </div>
       </div>
       <div className="bg-blue-500 p-6">
-        <h1 className="text-white"></h1>
+        <h1 className="text-white">Parking, filiale du groupe parking, sinscrit au
+ coeur des enjeux de la mobilité. Proche de nos 
+clients, nous facilitons leurs déplacements.</h1>
       </div>
-      <div className="bg-blue-500 p-6">
+      <div className="bg-orange-500 p-6">
         <div className="flex justify-center">
           <a href="lien_vers_twitter" className="mr-5">
             <img src="/path/to/your/twitter-logo.png" alt="Twitter" width="50" height="50" />
@@ -45,7 +54,7 @@ export default function PageConnection() {
             <img src="/path/to/your/instagram-logo.png" alt="Instagram" width="50" height="50" />
           </a>
           <a href="lien_vers_facebook">
-            <img src="/path/to/your/facebook-logo.png" alt="Facebook" width="50" height="50" />
+            <img src="/home/user-31-c1/gestion_de_parking/src/logo/facebook (2).png" alt="Facebook" width="50" height="50" />
           </a>
         </div>
         <div className="flex justify-center mt-5">
@@ -54,6 +63,7 @@ export default function PageConnection() {
           <a href="lien_vers_politique_confidentialite" className="text-white">Politique de confidentialité</a>
         </div>
       </div>
+      
     </div>
   );
 }
