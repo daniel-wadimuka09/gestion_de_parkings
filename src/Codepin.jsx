@@ -38,7 +38,7 @@ export default function PageConnection(){
         <h1 className="text-white">Parking</h1>
       </div>
       <div className="bg-white p-7 text-blue-500 ">
-        <h1>saisie le code  pin :</h1>
+        <h1>Taperle code a 4 chiffres :</h1>
         <div className='mb- py-48'>
           <input
             type="text"

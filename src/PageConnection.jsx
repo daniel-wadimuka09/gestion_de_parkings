@@ -68,11 +68,11 @@ export default function PageConnection() {
         <div className="my-4 flex justify-center ">
           {/* Facebook logo */}
           <a href="lien_vers_facebook" className="mr-5">
-            <img src="https://github.com/daniel-wadimuka09/gestion_de_parkings/blob/9cbcc6cdda8e9ee3ab57837ec3a799f7b9368016/src/logo/facebook%20(2).png" alt="Facebook" width="50" height="50" className="facebook-logo" />
+            <img src="src/logo/facebook .png" alt="Facebook" width="50" height="50" className="facebook-logo" />
           </a>
           {/* Google logo */}
           <a href="lien_vers_google">
-            <img src="/home/user-31-c1/gestion_de_parking/src/logo/google.png" alt="Google" width="50" height="50" className="google-logo" />
+            <img src="src/logo/google.png" alt="Google" width="50" height="50" className="google-logo" />
           </a>
         </div>
       </div>
