@@ -9,6 +9,7 @@ import Header from './Header.jsx';
 import Inscrption  from './page/Inscription';
 import Reservation from './Reservation.jsx';
 import Home from './Home.jsx';
+import Codepin from './Codepin.jsx';
 import { createBrowserRouter,
    RouterProvider, 
 } from "react-router-dom";
@@ -32,22 +33,29 @@ const router = createBrowserRouter([
     errorElement: <ErrorPage />,
 
   },
-  // {
-  //   path: "/",
-  //   element: <Reservation/> ,// Correctif: Changement de 'root' à 'Root'
-  //   errorElement: <ErrorPage />,
+  
+  {
+    path: "Sinscrire",
+    element: <Codepin/> ,// Correctif: Changement de 'root' à 'Root'
+    errorElement: <ErrorPage />,
 
-  // },
-  // {
-  //   path: "/",
-  //   element: <Home/> ,// Correctif: Changement de 'root' à 'Root'
-  //   errorElement: <ErrorPage />,
+  },
+  {
+    path: "Se connecter",
+    element: <Home/> ,// Correctif: Changement de 'root' à 'Root'
+    errorElement: <ErrorPage />,
 
-  // },
+  },
+  {
+    path: "Réservez votre place",
+    element: <Reservation/> ,// Correctif: Changement de 'root' à 'Root'
+    errorElement: <ErrorPage />,
+
+  },
   
   
   
-  // Ajoutez d'autres routes au besoin
+  // Ajoutez d'autres routes au besoin  Réservez votre place
 ]);
 
 const root = ReactDOM.createRoot(document.getElementById('root')).render(

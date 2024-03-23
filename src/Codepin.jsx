@@ -74,9 +74,9 @@ export default function PageConnection(){
           />
         </div>
         <div className='mb-4 py-11'>
-          <button onClick={handleRegistration} className="bg-orange-500 text-white px-4 py-2 rounded">
+          <Link to='Confimer le code/' onClick={handleRegistration} className="bg-orange-500 text-white px-4 py-2 rounded">
             Confimer le code
-          </button>
+          </Link>
         </div>
       </div>
       <div className="bg-blue-500 p-6">

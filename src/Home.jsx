@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from "react-router-dom";
 
 export default function PageConnection() {
 
@@ -26,7 +27,7 @@ export default function PageConnection() {
       <div className="bg-white p-4 text-blue-500 py-8">
         <img src="src/photos/parking.jpeg" alt="Parking" width="500" height="300" className="mx-auto" />
         <div>
-          <button className="bg-orange-500 text-white px-4 py-2 rounded" onClick={handleReservePlace}>Réservez votre place</button>
+          <Link to="/Réservez votre place" className="bg-orange-500 text-white px-4 py-2 rounded" onClick={handleReservePlace}>Réservez votre place</Link>
         </div>
         <p className="mb-4">Bienvenue dans nos parkings</p>
         <p className="mb-4">Réservez votre place ou souscrivez un abonnement dans le parking qui vous convient.</p>
@@ -68,7 +69,7 @@ export default function PageConnection() {
           </a>
         </div>
         <div className="flex justify-center mt-5">
-          <a href="lien_vers_contacts" className="mr-5 text-">Nos contacts</a>
+          <Link href="lien_vers_contacts" className="mr-5 text-">Nos contacts</Link>
           <a href="lien_vers_conditions_generales" className="mr-5 text-">Conditions générales</a>
           <a href="lien_vers_politique_confidentialite" className="text-">Politique de confidentialité</a>
         </div>

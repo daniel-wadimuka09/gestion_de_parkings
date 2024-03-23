@@ -40,7 +40,7 @@ export default function PageConnection() {
 
   return (
     <div className="text-center">
-      <div className="bg-blue-500 p-5">
+      <div className="bg-blue-500 p-6">
         
       </div>
       <div className="bg-white p-4 text-blue-500 py-8">
@@ -87,7 +87,7 @@ export default function PageConnection() {
       <div className='flex justify-center items-center mt-11'>
          <Link to='/Inscription'>Inscription</Link>
       </div>
-      <div className="bg-blue-500 p-6">
+      <div className="bg-blue-500 p-7">
         <h1 className="text-white"></h1>
       </div>
     </div>
