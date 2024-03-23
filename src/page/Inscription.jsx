@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-
+import { Link } from "react-router-dom";
 export default function PageConnection(){
 
   const [nom, setNom] = useState('');
@@ -38,6 +38,7 @@ export default function PageConnection(){
 
   const handleRegistration = () => {
     // Logic for handling registration
+
     // After successful registration, reset all fields to blank
     setNom('');
     setPostNom('');
@@ -48,10 +49,10 @@ export default function PageConnection(){
 
   return (
     <div className="text-center ">
-      <div className="bg-blue-500 p-6">
+      <div className="bg-blue-500 p-5">
         <h1 className="text-white">Parking</h1>
       </div>
-      <div className="bg-white p-4 text-blue-500 py-8">
+      <div className="bg-white p-4 text-blue-500 py-9">
         <h1>Inscription</h1>
         <div className='mb-4 py-4 '>
           <input
@@ -101,13 +102,13 @@ export default function PageConnection(){
       
         
         <div className='mb-4 py-4 '>
-          <button onClick={handleRegistration} className="bg-blue-500 text-white px-4 py-2 rounded">
-            S'inscrire
-          </button>
+          <Link to="/Sinscrire" onClick={handleRegistration} className="bg-blue-500 text-white px-4 py-2 rounded">
+            Sinscrire
+          </Link>
         </div>
         
       </div>
-      <div className="bg-blue-500 p-6">
+      <div className="bg-blue-500 p-4">
         <h1 className="text-white"></h1>
       </div>
     </div>

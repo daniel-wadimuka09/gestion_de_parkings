@@ -3,12 +3,13 @@ import './App.css'
 import PageHome from'./PageHome'
 import Header from './Header'
 import Footer from './Footer'
-import PageConnection from './PageConnection'
-import Inscription from './Inscription'
+import Inscription from './page/Inscription'
 import Codepin from './Codepin'
 import Home from './Home'
 import Reservation from './Reservation'
 import ReactDOM from 'react-dom'
+import Connecter from './page/Connecter'
+import { Route } from 'react-router-dom'
 
 
 
@@ -24,7 +25,7 @@ function App() {
       <div className=''>
       <Footer />
       </div>
-      <PageConnection />
+      <Connecter/>
       <div>
         <Inscription />
       </div>

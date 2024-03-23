@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 import PageHome from './PageHome';
-import PageConnection from './PageConnection';
+import PageConnection from './page/Connecter';
 
 export default function App() {
   return (
