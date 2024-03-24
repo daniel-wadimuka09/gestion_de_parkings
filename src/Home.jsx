@@ -1,5 +1,7 @@
 import React from 'react';
 import { Link } from "react-router-dom";
+import './App.css'
+
 
 export default function PageConnection() {
 
@@ -29,13 +31,13 @@ export default function PageConnection() {
         <div>
           <Link to="/Réservez votre place" className="bg-orange-500 text-white px-4 py-2 rounded" onClick={handleReservePlace}>Réservez votre place</Link>
         </div>
-        <p className="mb-4">Bienvenue dans nos parkings</p>
-        <p className="mb-4">Réservez votre place ou souscrivez un abonnement dans le parking qui vous convient.</p>
+        <p className="mb-6">Bienvenue dans nos parkings</p>
+        <p className="mb-3">Réservez votre place ou souscrivez un abonnement dans le parking qui vous convient.</p>
         <div className="my-4">
           <div className="flex items-center justify-center mb-4">
             <div>
               <img src="src/photos/kasumbalesa.jpeg" alt="Parking Kasumbalesa" width="500" height="50" className="mr-2" />
-              <button className="bg-orange-500 text-white px-4 py-2 rounded" onClick={handleParkingKasumbalesa}>Parking Kasumbalesa</button>
+              <Link to="/Parking Kasumbalesa" className="bg-orange-500 text-white px-4 py-4 rounded" onClick={handleParkingKasumbalesa}>Parking Kasumbalesa</Link>
             </div>
           </div>
           <div className="flex items-center justify-center">
@@ -47,7 +49,7 @@ export default function PageConnection() {
         </div>
         
         <div className="my-4">
-          <button className="bg-orange-500 text-white px-4 py-2 rounded" onClick={handleDiscoverServices}>Découvrir nos services</button>
+          <Link to="Réservez votre place" className="bg-orange-500 text-white px-4 py-2 rounded" onClick={handleDiscoverServices}>Découvrir nos services</Link>
         </div>
       </div>
       <div className="bg-blue-500 p-6">
@@ -65,7 +67,7 @@ export default function PageConnection() {
             <img src="src/logo/instagram .png" alt="Instagram" width="30" height="50" className='instagram-logo'/>
           </a>
           <a href="lien_vers_facebook">
-            <img src="src/logo/facebook .png" alt="Facebook" width="30" height="50" className='facebook-logo'/>
+            <img src="src/logo/facebook (2).png" alt="Facebook" width="30" height="50" className='facebook-logo'/>
           </a>
         </div>
         <div className="flex justify-center mt-5">

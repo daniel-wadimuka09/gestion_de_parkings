@@ -40,7 +40,7 @@ export default function PageConnection() {
 
   return (
     <div className="text-center">
-      <div className="bg-blue-500 p-6">
+      <div className="bg-blue-500 p-7">
         
       </div>
       <div className="bg-white p-4 text-blue-500 py-8">
@@ -64,9 +64,9 @@ export default function PageConnection() {
           />
         </div>
         <div className='py-11'>
-          <a href="#" onClick={handleForgotPassword} className="text-blue-500">
+          <Link href="Mot de passe oublié" onClick={handleForgotPassword} className="text-blue-500">
             Mot de passe oublié
-          </a>
+          </Link>
         </div>
         <div className='mb-10 px-'>
           <Link to="/Se connecter" onClick={handleLogin} className="bg-blue-500 text-white px-4 py-2 rounded">
@@ -76,18 +76,18 @@ export default function PageConnection() {
         
         <div className="my-4 flex justify-center">
           <a href="lien_vers_facebook" className="mr-5">
-            <img src="src/logo/facebook (2).png" alt="Facebook" width="25" height="25" className="facebook-logo" />
+            <img src="src/logo/facebook (2).png" alt="Facebook" width="25" height="25" className="facebook-logo " />
           </a>
-          <a href="lien_vers_google">
+          <Link to="lien_vers_google">
             <img src="src/logo/google.png" alt="Google" width="25" height="25" className="google-logo" />
-          </a>
+          </Link>
         </div>
         {error && <p className="text-red-500">{error}</p>}
       </div>
       <div className='flex justify-center items-center mt-11'>
-         <Link to='/Inscription'>Inscription</Link>
+         <Link to='/Inscription' >Sign in</Link>
       </div>
-      <div className="bg-blue-500 p-7">
+      <div className="bg-blue-500 p-6">
         <h1 className="text-white"></h1>
       </div>
     </div>

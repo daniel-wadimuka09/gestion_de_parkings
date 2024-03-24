@@ -10,6 +10,9 @@ import Reservation from './Reservation'
 import ReactDOM from 'react-dom'
 import Connecter from './page/Connecter'
 import { Route } from 'react-router-dom'
+import Listdeplace from './Listdeplace'
+import InfoKas  from './InfoKas'
+import Ficher from './Ficher'
 
 
 
@@ -37,6 +40,15 @@ function App() {
       </div>
       <div>
         <Home />
+      </div>
+      <div>
+        <Listdeplace />
+      </div>
+      <div>
+        <InfoKas/>
+      </div>
+      <div>
+        <Ficher/>
       </div>
       
     </>

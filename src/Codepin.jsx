@@ -34,11 +34,11 @@ export default function PageConnection(){
 
   return (
     <div className="text-center">
-      <div className="bg-blue-500 p-6">
+      <div className="bg-blue-500 p-7">
         <h1 className="text-white">Parking</h1>
       </div>
       <div className="bg-white p-7 text-blue-500 ">
-        <h1>Taperle code a 4 chiffres :</h1>
+        <h1>Entre votre Verification code </h1>
         <div className='mb- py-48'>
           <input
             type="text"
@@ -73,13 +73,13 @@ export default function PageConnection(){
             className="bg-blue-500 text-blue-500 px-4 py-2 rounded w-10 inline-block"
           />
         </div>
-        <div className='mb-4 py-11'>
+        <div className='mb-4 py-5'>
           <Link to='Confimer le code/' onClick={handleRegistration} className="bg-orange-500 text-white px-4 py-2 rounded">
-            Confimer le code
+            Verification
           </Link>
         </div>
       </div>
-      <div className="bg-blue-500 p-6">
+      <div className="bg-blue-500 p-5">
         <h1 className="text-white"></h1>
       </div>
     </div>

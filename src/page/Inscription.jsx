@@ -103,7 +103,7 @@ export default function PageConnection(){
         
         <div className='mb-4 py-4 '>
           <Link to="/Sinscrire" onClick={handleRegistration} className="bg-blue-500 text-white px-4 py-2 rounded">
-            Sinscrire
+            S'inscrire
           </Link>
         </div>
         
