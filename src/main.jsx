@@ -1,11 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-// import App from './App.jsx';
 import './index.css';
 import PageHome from './PageHome.jsx';
 import Connecter from './page/Connecter.jsx';
-// import Header from './Header.jsx';
- import ErrorPage from './error-page.jsx'; // Correctif: Changement de 'error-page' à 'ErrorPage'
+import ErrorPage from './error-page.jsx'; // Correctif: Changement de 'error-page' à 'ErrorPage'
 import Inscrption  from './page/Inscription';
 import Reservation from './Reservation.jsx';
 import Home from './Home.jsx';
@@ -13,9 +11,8 @@ import Codepin from './Codepin.jsx';
 import Listdeplace from './Listdeplace.jsx';
 import InfoKas  from './InfoKas.jsx';
 import Ficher from './Ficher.jsx'
-
 import { createBrowserRouter,
-   RouterProvider, 
+   RouterProvider,
 } from "react-router-dom";
 
 

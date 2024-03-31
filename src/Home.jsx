@@ -24,15 +24,17 @@ export default function PageConnection() {
   return (
     <div className="text-center">
       <div className="bg-blue-500 p-5">
-        <h1 className="text-white">Parking</h1>
+        {/* <h1 className="text-white">Parking</h1> */}
       </div>
-      <div className="bg-white p-4 text-blue-500 py-8">
+      
+      <div className="bg-white  text-blue-500 py-8">
+      
         <img src="src/photos/parking.jpeg" alt="Parking" width="500" height="300" className="mx-auto" />
         <div>
-          <Link to="/Réservez votre place" className="bg-orange-500 text-white px-4 py-2 rounded" onClick={handleReservePlace}>Réservez votre place</Link>
+          <Link to="/Réservez votre place" className="bg-orange-500 text-white px-4 py-3 rounded  " onClick={handleReservePlace}>Réservez votre place</Link>
         </div>
-        <p className="mb-6">Bienvenue dans nos parkings</p>
-        <p className="mb-3">Réservez votre place ou souscrivez un abonnement dans le parking qui vous convient.</p>
+        
+        <p className="mb-5">Réservez votre place ou souscrivez un abonnement dans le parking qui vous convient.</p>
         <div className="my-4">
           <div className="flex items-center justify-center mb-4">
             <div>

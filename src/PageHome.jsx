@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 
 export default function PageHome() {
   return (
+    
     <div className="relative -screen ">
       <div className="absolute inset-0 bg-image "></div>
       <div className="flex justify-center items-center relative  mb-5"> 
